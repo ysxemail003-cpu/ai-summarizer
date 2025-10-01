@@ -1,0 +1,13 @@
+fastapi>=0.100,<1.0
+uvicorn[standard]>=0.22,<1.0
+python-multipart>=0.0.6
+pydantic>=2.0.0
+comtypes>=1.2.0
+
+# test/dev
+pytest>=7.0
+httpx>=0.24
+
+# Optional (for speech-to-text). Install one of these for Whisper support:
+# openai-whisper>=20231117
+# faster-whisper>=1.0.0

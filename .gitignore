@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.dist-info/
+.eggs/
+.build/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.coverage*
+pytestdebug.log
+
+# Environments
+.venv/
+venv/
+.env
+.env.*
+
+# Editors/IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project data (keep small samples, ignore heavy datasets)
+data/MNIST/
+# If you later add more large datasets, list them here:
+# data/your_large_dataset/
+
+# Logs & temp
+*.log
+*.tmp
+*.temp
+**/tmp/
+**/temp/
+

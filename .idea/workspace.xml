@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5400627c-6b40-4541-a856-bc63f78ec8e3" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aipart/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aipart/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aipart/api/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aipart/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aipart/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aipart/services/github_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aipart/services/optimizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aipart/services/stt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aipart/services/summarizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aipart/services/text_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/ai_audio_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/check_fw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/generate_tone_wav.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/github_cli.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/smoke_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/tts_sapi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_github_api.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="33BaHUQ8KVhtRHZ8v3B2iDCWDVW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.gobang.executor&quot;: &quot;Run&quot;,
+    &quot;Python.matpoltlib简单实例.executor&quot;: &quot;Run&quot;,
+    &quot;Python.roc曲线.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.数据集线性可分性示例.executor&quot;: &quot;Run&quot;,
+    &quot;Python.线性可分性简单实例.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-14d54ed193d7-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.28774.16" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="5400627c-6b40-4541-a856-bc63f78ec8e3" name="更改" comment="" />
+      <created>1758792832319</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758792832319</updated>
+      <workItem from="1759239408138" duration="40000" />
+      <workItem from="1759239454896" duration="58000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
