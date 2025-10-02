@@ -40,6 +40,14 @@ class GitHubAPI:
         r.raise_for_status()
         return r.json()
 
+    def get_user(self) -> Dict[str, Any]:
+        """Get the authenticated user's profile (login, id, etc.)."""
+        self._require_token()
+        url = f"{self.base_url}/user"
+        r = httpx.get(url, headers=self._headers, timeout=30.0)
+        r.raise_for_status()
+        return r.json()
+
     def create_issue(
         self,
         owner: str,

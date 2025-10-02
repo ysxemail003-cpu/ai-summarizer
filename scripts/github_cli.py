@@ -102,6 +102,10 @@ def cmd_create_repo(args: argparse.Namespace) -> int:
         print(f"[Error] 创建仓库失败: {e}", file=sys.stderr)
         return 2
 
+    if getattr(args, "json", False):
+        print(json.dumps(repo, ensure_ascii=False))
+        return 0
+
     full = repo.get("full_name")
     html_url = repo.get("html_url")
     clone_https = repo.get("clone_url")
@@ -149,6 +153,7 @@ def make_parser() -> argparse.ArgumentParser:
     sp.set_defaults(private=True)
     sp.add_argument("--description", default="", help="仓库描述")
     sp.add_argument("--auto-init", action="store_true", help="GitHub 端自动初始化（README）")
+    sp.add_argument("--json", action="store_true", help="以 JSON 格式输出创建结果")
     sp.set_defaults(func=cmd_create_repo)
 
     return p

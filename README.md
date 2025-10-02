@@ -469,3 +469,57 @@ client = GitHubAPI(token="<your-token>", base_url="https://ghe.your-org.com/api/
 ---
 
 提示：我们在本地运行了全部测试，当前为 13 通过、0 失败（含若干第三方 Deprecation 警告，不影响功能）。GitHub 客户端在无令牌时不会发生任何真实网络请求，满足安全要求。
+
+---
+
+## 发布到 GitHub（一键脚本 + 手动方式）
+
+本项目已内置自动化脚本，帮助你在 GitHub 上创建新仓库并把当前项目推送上去。
+
+前置条件：
+- 已安装 Git 并在 PATH 中可用（cmd 执行 `git --version` 可检查）
+- 已安装 Python 并在 PATH 中可用（cmd 执行 `python --version` 可检查）
+- 已准备 GitHub 个人访问令牌（PAT），并设置到环境变量 `GITHUB_TOKEN`
+  - 临时设置：`set GITHUB_TOKEN=ghp_xxx_your_token`
+  - 永久设置（新窗口生效）：`setx GITHUB_TOKEN "ghp_xxx_your_token"`
+
+一键方式（推荐）：
+1) 在项目根目录打开 cmd（或在 IDE 内打开系统终端）
+2) 运行脚本：
+   - 使用默认仓库名（当前文件夹名），私有可见性：
+     scripts\publish_to_github.cmd
+   - 或自定义参数：
+     scripts\publish_to_github.cmd --name my-repo --public --description "My AI service"
+     可选参数：
+     - `--name <仓库名>`：默认使用当前目录名
+     - `--org <组织名>`：在组织下创建
+     - `--private`/`--public`：仓库可见性（默认私有）
+     - `--description <文本>`：仓库描述
+     - `--auto-init`：在 GitHub 端自动生成 README（注意：如果远程有初始提交，本地首次 push 需处理分支合并或强推）
+     - `--remote-name <名称>`：默认 origin
+
+脚本行为说明：
+- 使用 `GITHUB_TOKEN` 调用 GitHub API 创建仓库；若已存在，则复用
+- 本地执行 `git init`（如未初始化）并确保分支为 `main`，提交当前文件
+- 把远程 `origin` 配置为不含 token 的 HTTPS URL，并用临时带 token 的 URL 完成首次 push（避免泄露 token 到 .git 配置）
+- 成功后输出远程仓库地址
+
+手动方式（可选）：
+1) 在 GitHub Web 端创建空仓库（不要初始化 README/License），记下 HTTPS 地址，如：`https://github.com/<你>/<仓库>.git`
+2) 在项目根目录执行：
+   git init
+   git checkout -B main
+   git add -A
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/<你>/<仓库>.git
+   git push -u origin main
+
+遇到问题？
+- 报错缺少 Git：请安装 Git 并确保在 PATH 中
+- 报错缺少 Python：请安装 Python 并确保在 PATH 中
+- 报错未设置 GITHUB_TOKEN：请设置环境变量或改为手动方式
+- 首次 push 提示需要先拉取：说明你在 GitHub 端勾选了 `Initialize with README`，请先 `git pull --rebase origin main` 再 push，或在脚本中去掉 `--auto-init` 并删除远程 README
+
+---
+
+如需把自动化流程整合到 CI/CD（例如 GitHub Actions）或添加版本发布工作流，我可以继续为你补充配置文件（.github/workflows/*）与脚本。
