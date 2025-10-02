@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5400627c-6b40-4541-a856-bc63f78ec8e3" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/publish_to_github.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/publish_to_github.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aipart/services/github_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/aipart/services/github_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/github_cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/github_cli.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ysxemail003-cpu"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ysxemail003-cpu/ai-summarizer.git",
+    "accountId": "763670a9-4f9c-4bef-824f-a6c557ae6e84"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
